@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moment · Home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#3B6BD0}a:hover{color:#2C55AD}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #FFF4F7; color: #3A2530; font-family: 'DM Sans', sans-serif">
+<div style="padding: 52px 20px 100px; display: flex; flex-direction: column; gap: 16px">
+
+<div style="display: flex; justify-content: space-between; align-items: center">
+<div>
+<p style="margin: 0 0 2px; font-size: 13px; color: #7A5F6B; font-weight: 500">Monday, October 19</p>
+<h1 style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.01em">Hi, [NAME]</h1>
+</div>
+<button aria-label="Profile" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid #F5CAD7; background: #FCE4EC; color: #A8325D; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">[I]</button>
+</div>
+
+<section aria-labelledby="next" style="background: #FCE4EC; border: 1px solid #F5CAD7; border-radius: 22px; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<p style="margin: 0; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: #A8325D">NEAREST DEADLINE</p>
+<h2 id="next" style="margin: 0; font-size: 20px; font-weight: 700">Torsion quiz</h2>
+<p style="margin: 0; font-size: 13px; color: #7A5F6B">Thu, Oct 22 · 10:30 AM</p>
+<p style="margin: 0; font-size: 13px; color: #7A5F6B">Mechanics of Deformable Bodies</p>
+</div>
+<div style="flex: none; width: 78px; height: 78px; border-radius: 50%; background: #FFFFFF; border: 3px solid #E58AAA; display: flex; flex-direction: column; align-items: center; justify-content: center">
+<span style="font-family: 'DM Mono', monospace; font-size: 28px; font-weight: 500; line-height: 1; color: #A8325D">3</span>
+<span style="font-size: 11px; color: #7A5F6B; font-weight: 600">days</span>
+</div>
+</section>
+
+<section aria-labelledby="week" style="background: #FFFFFF; border: 1px solid #F5CAD7; border-radius: 20px; padding: 14px 14px 12px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; padding: 0 2px">
+<h2 id="week" style="margin: 0; font-size: 16px; font-weight: 700">October</h2>
+<span style="font-size: 12px; color: #7A5F6B">Tap a day to add plans</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px">
+<sc-for list="{{days}}" as="d" hint-placeholder-count="7">
+<a href="DaySheet.dc.html" aria-label="{{d.label}}" style="{{d.style}}"><span style="font-size: 11px; font-weight: 600; opacity: 0.85">{{d.w}}</span><span style="font-size: 16px; font-weight: 700">{{d.n}}</span><span style="{{d.dot}}"></span></a>
+</sc-for>
+</div>
+<div style="display: flex; gap: 14px; font-size: 12px; color: #7A5F6B; padding: 0 2px">
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 7px; height: 7px; border-radius: 50%; background: #D9568A"></span>Quiz or exam</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 7px; height: 7px; border-radius: 50%; background: #3B6BD0"></span>Study plan</span>
+</div>
+</section>
+
+<section aria-labelledby="today" style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 id="today" style="margin: 0; font-size: 16px; font-weight: 700">Today</h2>
+<span style="font-size: 13px; color: #7A5F6B">about 35 min</span>
+</div>
+<a href="Practice.dc.html" style="display: flex; gap: 12px; align-items: center; padding: 13px 14px; border-radius: 18px; background: #FFFFFF; border: 1px solid #F5CAD7; text-decoration: none; color: #3A2530">
+<span style="flex: none; width: 42px; height: 42px; border-radius: 14px; background: #E6EEFC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B6BD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 1 0 3-6.2"></path><path d="M4 4v4h4"></path></svg></span>
+<span style="flex: 1; min-width: 0"><span style="display: block; font-size: 15px; font-weight: 600">Quick recall</span><span style="display: block; font-size: 13px; color: #7A5F6B">Beam reactions · 5 min · no hints</span></span>
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C7A9B5" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"></path></svg>
+</a>
+<a href="Solve.dc.html" style="display: flex; gap: 12px; align-items: center; padding: 13px 14px; border-radius: 18px; background: #FFFFFF; border: 2px solid #E58AAA; text-decoration: none; color: #3A2530">
+<span style="flex: none; width: 42px; height: 42px; border-radius: 14px; background: #FCE4EC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A8325D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19l4-1 10-10-3-3L6 15z"></path></svg></span>
+<span style="flex: 1; min-width: 0"><span style="display: block; font-size: 15px; font-weight: 600">Solve · Torsion</span><span style="display: block; font-size: 13px; color: #7A5F6B">Step-by-step · 15 min · for Thursday</span></span>
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C7A9B5" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"></path></svg>
+</a>
+<a href="Practice.dc.html" style="display: flex; gap: 12px; align-items: center; padding: 13px 14px; border-radius: 18px; background: #FFFFFF; border: 1px solid #F5CAD7; text-decoration: none; color: #3A2530">
+<span style="flex: none; width: 42px; height: 42px; border-radius: 14px; background: #E6EEFC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B6BD0" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="13" r="8"></circle><path d="M12 9v4l3 2"></path><path d="M9 2h6"></path></svg></span>
+<span style="flex: 1; min-width: 0"><span style="display: block; font-size: 15px; font-weight: 600">Board situation drill</span><span style="display: block; font-size: 13px; color: #7A5F6B">1 situation · 3 questions · timed</span></span>
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C7A9B5" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"></path></svg>
+</a>
+</section>
+</div>
+
+<nav aria-label="Tabs" style="position: absolute; left: 0; right: 0; bottom: 0; height: 84px; background: #FFFFFF; border-top: 1px solid #F5CAD7; display: flex; padding: 6px 8px 0; box-sizing: border-box">
+<a href="Main.dc.html" aria-current="page" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px 0; text-decoration: none; color: #A8325D; font-size: 11px; font-weight: 700"><span style="width: 56px; height: 30px; border-radius: 15px; background: #FCE4EC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"></path><path d="M6 10v10h12V10"></path></svg></span>Home</a>
+<a href="Study.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px 0; text-decoration: none; color: #7A5F6B; font-size: 11px; font-weight: 600"><span style="width: 56px; height: 30px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"></path><path d="M5 17a3 3 0 0 1 3-3h11"></path></svg></span>Study</a>
+<a href="Practice.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px 0; text-decoration: none; color: #7A5F6B; font-size: 11px; font-weight: 600"><span style="width: 56px; height: 30px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19l4-1 10-10-3-3L6 15z"></path></svg></span>Practice</a>
+<a href="Progress.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px 0; text-decoration: none; color: #7A5F6B; font-size: 11px; font-weight: 600"><span style="width: 56px; height: 30px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 19v-8"></path><path d="M12 19V5"></path><path d="M19 19v-6"></path></svg></span>Progress</a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+var src = [['M',19,'b'],['T',20,''],['W',21,'b'],['T',22,'p'],['F',23,''],['S',24,'b'],['S',25,'']];
+var days = src.map(function (x, i) {
+var today = i === 0;
+var style = 'display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0 6px; border-radius: 14px; text-decoration: none; min-height: 44px; ' + (today ? 'background: #FCE4EC; color: #A8325D; box-shadow: inset 0 0 0 2px #E58AAA' : 'color: #3A2530');
+var dotColor = x[2] === 'p' ? '#D9568A' : (x[2] === 'b' ? '#3B6BD0' : 'transparent');
+var label = 'October ' + x[1] + (x[2] === 'p' ? ', quiz' : (x[2] === 'b' ? ', study plan' : '')) + ', add plans';
+return { w: x[0], n: x[1], style: style, dot: 'width: 6px; height: 6px; border-radius: 50%; background: ' + dotColor, label: label };
+});
+return { days: days };
+}
+}
+</script>
+</body>
+</html>

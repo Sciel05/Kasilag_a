@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moment · Study</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#3B6BD0}a:hover{color:#2C55AD}
+</style>
+</helmet>
+<div style="width: 390px; height: 960px; position: relative; overflow: hidden; background: #FFF4F7; color: #3A2530; font-family: 'DM Sans', sans-serif">
+<div style="padding: 52px 20px 100px; display: flex; flex-direction: column; gap: 18px">
+
+<div>
+<h1 style="margin: 0 0 4px; font-size: 26px; font-weight: 700; letter-spacing: -0.01em">Study</h1>
+<p style="margin: 0; font-size: 14px; color: #7A5F6B">Your lessons, organized by class</p>
+</div>
+
+<section aria-labelledby="add" style="background: #FFFFFF; border: 1px solid #F5CAD7; border-radius: 22px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+<h2 id="add" style="margin: 0; font-size: 16px; font-weight: 700">Add a source</h2>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<button style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 14px 4px; border-radius: 16px; border: 0; background: #FCE4EC; color: #A8325D; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4"></path><path d="M7 9l5-5 5 5"></path><path d="M4 15v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"></path></svg>File</button>
+<button style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 14px 4px; border-radius: 16px; border: 0; background: #FCE4EC; color: #A8325D; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"></path><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg>Link</button>
+<button style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 14px 4px; border-radius: 16px; border: 0; background: #FCE4EC; color: #A8325D; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>Photo</button>
+</div>
+<p style="margin: 0; font-size: 12px; color: #7A5F6B">PDF, slides, YouTube lectures, websites, or photos of notes</p>
+
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #F5CAD7; padding-top: 12px">
+<p style="margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; color: #7A5F6B">RECENTLY ADDED</p>
+<a href="Folder.dc.html" style="display: flex; gap: 10px; align-items: center; text-decoration: none; color: #3A2530; padding: 4px 0; min-height: 44px">
+<span style="flex: none; width: 36px; height: 36px; border-radius: 10px; background: #FFF4F7; border: 1px solid #F5CAD7; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; color: #A8325D">PPTX</span>
+<span style="flex: 1; min-width: 0"><span style="display: block; font-size: 14px; font-weight: 600">TORSION_PART-1.pptx</span><span style="display: block; font-size: 12px; color: #7A5F6B">Deformable Bodies · Ch 3</span></span>
+<span style="font-size: 11px; font-weight: 700; color: #A8325D; background: #FCE4EC; padding: 4px 8px; border-radius: 8px">Check</span>
+</a>
+<a href="Folder.dc.html" style="display: flex; gap: 10px; align-items: center; text-decoration: none; color: #3A2530; padding: 4px 0; min-height: 44px">
+<span style="flex: none; width: 36px; height: 36px; border-radius: 10px; background: #E6EEFC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B6BD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="3"></rect><path d="M10 9.5v5l4-2.5z"></path></svg></span>
+<span style="flex: 1; min-width: 0"><span style="display: block; font-size: 14px; font-weight: 600">Torsion of shafts lecture</span><span style="display: block; font-size: 12px; color: #7A5F6B">YouTube link · Ch 3</span></span>
+<span style="font-size: 11px; font-weight: 700; color: #3B6BD0; background: #E6EEFC; padding: 4px 8px; border-radius: 8px">Ready</span>
+</a>
+</div>
+</section>
+
+<section aria-labelledby="classes" style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 id="classes" style="margin: 0; font-size: 16px; font-weight: 700">My classes</h2>
+<span style="font-size: 13px; color: #7A5F6B">1st sem · 2nd year</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<a href="Folder.dc.html" style="display: flex; flex-direction: column; gap: 10px; padding: 14px; border-radius: 20px; background: #FCE4EC; text-decoration: none; color: #3A2530; min-height: 132px; box-sizing: border-box">
+<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#A8325D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+<span style="font-size: 15px; font-weight: 700; line-height: 1.25">Mechanics of Deformable Bodies</span>
+<span style="margin-top: auto; font-size: 12px; color: #7A5F6B">3 chapters · 6 sources</span>
+</a>
+<a href="Folder.dc.html" style="display: flex; flex-direction: column; gap: 10px; padding: 14px; border-radius: 20px; background: #E6EEFC; text-decoration: none; color: #3A2530; min-height: 132px; box-sizing: border-box">
+<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3B6BD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+<span style="font-size: 15px; font-weight: 700; line-height: 1.25">Dynamics of Rigid Bodies</span>
+<span style="margin-top: auto; font-size: 12px; color: #4F5E7A">2 chapters · 4 sources</span>
+</a>
+<a href="Folder.dc.html" style="display: flex; flex-direction: column; gap: 10px; padding: 14px; border-radius: 20px; background: #FFFFFF; border: 1px solid #F5CAD7; text-decoration: none; color: #3A2530; min-height: 132px; box-sizing: border-box">
+<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#A8325D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+<span style="font-size: 15px; font-weight: 700; line-height: 1.25">Fundamentals of Surveying</span>
+<span style="margin-top: auto; font-size: 12px; color: #7A5F6B">1 chapter · 2 sources</span>
+</a>
+<a href="Folder.dc.html" style="display: flex; flex-direction: column; gap: 10px; padding: 14px; border-radius: 20px; background: #FCE4EC; text-decoration: none; color: #3A2530; min-height: 132px; box-sizing: border-box">
+<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#A8325D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+<span style="font-size: 15px; font-weight: 700; line-height: 1.25">Construction Materials &amp; Testing</span>
+<span style="margin-top: auto; font-size: 12px; color: #7A5F6B">No sources yet</span>
+</a>
+</div>
+<button style="padding: 14px; border-radius: 18px; border: 2px dashed #EBC4D2; background: transparent; color: #A8325D; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer">New class folder</button>
+</section>
+</div>
+
+<nav aria-label="Tabs" style="position: absolute; left: 0; right: 0; bottom: 0; height: 84px; background: #FFFFFF; border-top: 1px solid #F5CAD7; display: flex; padding: 6px 8px 0; box-sizing: border-box">
+<a href="Main.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px 0; text-decoration: none; color: #7A5F6B; font-size: 11px; font-weight: 600"><span style="width: 56px; height: 30px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"></path><path d="M6 10v10h12V10"></path></svg></span>Home</a>
+<a href="Study.dc.html" aria-current="page" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px 0; text-decoration: none; color: #A8325D; font-size: 11px; font-weight: 700"><span style="width: 56px; height: 30px; border-radius: 15px; background: #FCE4EC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"></path><path d="M5 17a3 3 0 0 1 3-3h11"></path></svg></span>Study</a>
+<a href="Practice.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px 0; text-decoration: none; color: #7A5F6B; font-size: 11px; font-weight: 600"><span style="width: 56px; height: 30px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19l4-1 10-10-3-3L6 15z"></path></svg></span>Practice</a>
+<a href="Progress.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px 0; text-decoration: none; color: #7A5F6B; font-size: 11px; font-weight: 600"><span style="width: 56px; height: 30px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 19v-8"></path><path d="M12 19V5"></path><path d="M19 19v-6"></path></svg></span>Progress</a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":960}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moment · Practice</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#3B6BD0}a:hover{color:#2C55AD}
+</style>
+</helmet>
+<div style="width: 390px; height: 1000px; position: relative; overflow: hidden; background: #FFF4F7; color: #3A2530; font-family: 'DM Sans', sans-serif">
+<div style="padding: 52px 20px 100px; display: flex; flex-direction: column; gap: 18px">
+
+<div>
+<h1 style="margin: 0 0 12px; font-size: 26px; font-weight: 700; letter-spacing: -0.01em">Practice</h1>
+<div role="group" aria-label="Filter" style="display: flex; gap: 8px; flex-wrap: wrap">
+<sc-for list="{{chips}}" as="c" hint-placeholder-count="4">
+<button aria-pressed="{{c.pressed}}" onClick="{{c.pick}}" style="{{c.style}}">{{c.label}}</button>
+</sc-for>
+</div>
+</div>
+
+<section aria-labelledby="due" style="background: #E6EEFC; border-radius: 22px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<h2 id="due" style="margin: 0; font-size: 16px; font-weight: 700">Due now</h2>
+<span style="font-size: 12px; font-weight: 700; color: #3B6BD0">3 quick recalls · 10 min</span>
+</div>
+<p style="margin: 0; font-size: 13px; color: #4F5E7A; line-height: 1.45">Older topics coming back so they stay fresh. New numbers, no hints.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<span style="padding: 6px 10px; border-radius: 10px; background: #FFFFFF; font-size: 13px; font-weight: 500">Beam reactions</span>
+<span style="padding: 6px 10px; border-radius: 10px; background: #FFFFFF; font-size: 13px; font-weight: 500">Centroids</span>
+<span style="padding: 6px 10px; border-radius: 10px; background: #FFFFFF; font-size: 13px; font-weight: 500">Simple stress</span>
+</div>
+<a href="Solve.dc.html" style="text-align: center; padding: 13px; border-radius: 14px; background: #3B6BD0; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px">Start recall</a>
+</section>
+
+<section aria-labelledby="cont" style="display: flex; flex-direction: column; gap: 10px">
+<h2 id="cont" style="margin: 0; font-size: 16px; font-weight: 700">Continue</h2>
+<a href="Solve.dc.html" style="display: flex; flex-direction: column; gap: 10px; padding: 16px; border-radius: 20px; background: #FFFFFF; border: 2px solid #E58AAA; text-decoration: none; color: #3A2530">
+<span style="display: flex; justify-content: space-between; align-items: center"><span style="font-size: 15px; font-weight: 700">Torsion</span><span style="font-size: 12px; font-weight: 700; color: #A8325D">Step 2 of 4</span></span>
+<span aria-hidden="true" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px"><span style="height: 6px; border-radius: 3px; background: #3B6BD0"></span><span style="height: 6px; border-radius: 3px; background: #E58AAA"></span><span style="height: 6px; border-radius: 3px; background: #F5DDE6"></span><span style="height: 6px; border-radius: 3px; background: #F5DDE6"></span></span>
+<span style="font-size: 13px; color: #7A5F6B">6 of 10 solved on your own · need 8 to move up</span>
+</a>
+</section>
+
+<section aria-labelledby="board" style="display: flex; flex-direction: column; gap: 10px">
+<h2 id="board" style="margin: 0; font-size: 16px; font-weight: 700">Board mode</h2>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<a href="Solve.dc.html" style="display: flex; flex-direction: column; gap: 8px; padding: 14px; border-radius: 20px; background: #FCE4EC; text-decoration: none; color: #3A2530; min-height: 120px; box-sizing: border-box">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A8325D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"></rect><path d="M8 9h8"></path><path d="M8 13h8"></path><path d="M8 17h5"></path></svg>
+<span style="font-size: 15px; font-weight: 700">Situation drill</span>
+<span style="margin-top: auto; font-size: 12px; color: #7A5F6B">1 situation · 3 questions · timed</span>
+</a>
+<a href="Solve.dc.html" style="display: flex; flex-direction: column; gap: 8px; padding: 14px; border-radius: 20px; background: #FCE4EC; text-decoration: none; color: #3A2530; min-height: 120px; box-sizing: border-box">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A8325D" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="13" r="8"></circle><path d="M12 9v4l3 2"></path><path d="M9 2h6"></path></svg>
+<span style="font-size: 15px; font-weight: 700">Mock exam</span>
+<span style="margin-top: auto; font-size: 12px; color: #7A5F6B">PSAD · 25 items · 2 hrs</span>
+</a>
+</div>
+</section>
+
+<section aria-labelledby="sets" style="display: flex; flex-direction: column; gap: 10px">
+<h2 id="sets" style="margin: 0; font-size: 16px; font-weight: 700">Problem sets</h2>
+<sc-for list="{{sets}}" as="s" hint-placeholder-count="4">
+<a href="Solve.dc.html" style="display: flex; gap: 12px; align-items: center; padding: 13px 14px; border-radius: 18px; background: #FFFFFF; border: 1px solid #F5CAD7; text-decoration: none; color: #3A2530">
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span style="display: flex; justify-content: space-between; gap: 8px"><span style="font-size: 15px; font-weight: 600">{{s.name}}</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #7A5F6B">{{s.count}}</span></span>
+<span style="font-size: 12px; color: #7A5F6B">{{s.meta}}</span>
+<span style="height: 5px; border-radius: 3px; background: #F5DDE6"><span style="{{s.bar}}"></span></span>
+</span>
+</a>
+</sc-for>
+</section>
+</div>
+
+<nav aria-label="Tabs" style="position: absolute; left: 0; right: 0; bottom: 0; height: 84px; background: #FFFFFF; border-top: 1px solid #F5CAD7; display: flex; padding: 6px 8px 0; box-sizing: border-box">
+<a href="Main.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px 0; text-decoration: none; color: #7A5F6B; font-size: 11px; font-weight: 600"><span style="width: 56px; height: 30px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"></path><path d="M6 10v10h12V10"></path></svg></span>Home</a>
+<a href="Study.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px 0; text-decoration: none; color: #7A5F6B; font-size: 11px; font-weight: 600"><span style="width: 56px; height: 30px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"></path><path d="M5 17a3 3 0 0 1 3-3h11"></path></svg></span>Study</a>
+<a href="Practice.dc.html" aria-current="page" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px 0; text-decoration: none; color: #A8325D; font-size: 11px; font-weight: 700"><span style="width: 56px; height: 30px; border-radius: 15px; background: #FCE4EC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19l4-1 10-10-3-3L6 15z"></path></svg></span>Practice</a>
+<a href="Progress.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px 0; text-decoration: none; color: #7A5F6B; font-size: 11px; font-weight: 600"><span style="width: 56px; height: 30px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 19v-8"></path><path d="M12 19V5"></path><path d="M19 19v-6"></path></svg></span>Progress</a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1000}}'>
+class Component extends DCLogic {
+constructor(p) { super(p); this.state = { f: 'all' }; }
+renderVals() {
+var self = this;
+var opts = [['all','All'],['course','My classes'],['psad','PSAD'],['hge','HGE']];
+var chips = opts.map(function (o) {
+var on = self.state.f === o[0];
+return { label: o[1], pressed: on ? 'true' : 'false', pick: function () { self.setState({ f: o[0] }); },
+style: 'padding: 10px 14px; min-height: 40px; border-radius: 20px; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer; ' + (on ? 'border: 0; background: #C2416E; color: #FFFFFF' : 'border: 1px solid #EBC4D2; background: #FFFFFF; color: #7A5F6B') };
+});
+var raw = [['Torsion · Set A','7/12','Deformable Bodies · Ch 3',58],['Simple stress','10/10','Deformable Bodies · Ch 1',100],['Strain','6/8','Deformable Bodies · Ch 2',75],['Kinematics of particles','2/10','Dynamics · Ch 1',20]];
+var sets = raw.map(function (r) { return { name: r[0], count: r[1], meta: r[2], bar: 'display: block; height: 5px; border-radius: 3px; background: #3B6BD0; width: ' + r[3] + '%' }; });
+return { chips: chips, sets: sets };
+}
+}
+</script>
+</body>
+</html>

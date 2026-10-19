@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moment · Solving</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#3B6BD0}a:hover{color:#2C55AD}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #FFF4F7; color: #3A2530; font-family: 'DM Sans', sans-serif">
+<div style="padding: 44px 18px 110px; display: flex; flex-direction: column; gap: 12px">
+
+<div style="display: flex; align-items: center; gap: 10px">
+<a href="Main.dc.html" aria-label="Close" style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #FFFFFF; border: 1px solid #F5CAD7; color: #7A5F6B; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg></a>
+<div style="flex: 1; min-width: 0">
+<p style="margin: 0; font-size: 15px; font-weight: 700">Torsion · hollow shaft</p>
+<p style="margin: 0; font-size: 12px; color: #7A5F6B">Step 2 of 4 · hints on</p>
+</div>
+<span style="font-family: 'DM Mono', monospace; font-size: 13px; color: #7A5F6B">4:12</span>
+</div>
+<div aria-hidden="true" style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px"><span style="height: 5px; border-radius: 3px; background: #3B6BD0"></span><span style="height: 5px; border-radius: 3px; background: #E58AAA"></span><span style="height: 5px; border-radius: 3px; background: #F5DDE6"></span><span style="height: 5px; border-radius: 3px; background: #F5DDE6"></span><span style="height: 5px; border-radius: 3px; background: #F5DDE6"></span></div>
+
+<section aria-labelledby="sit" style="background: #FFFFFF; border: 1px solid #F5CAD7; border-radius: 20px; padding: 14px; display: flex; flex-direction: column; gap: 10px">
+<h1 id="sit" style="margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; color: #A8325D">SITUATION</h1>
+<p style="margin: 0; font-size: 14px; line-height: 1.5">A hollow steel shaft 2.4 m long transmits 250 kW at 4 Hz. Outer diameter 120 mm, inner 80 mm. G = 83 GPa. Find (a) the max shear stress and (b) the angle of twist.</p>
+<svg role="img" aria-label="Hollow shaft, 120 mm outer diameter, 80 mm inner diameter, 2.4 m long" viewBox="0 0 340 92" style="width: 100%; height: auto; display: block; background: #FFF4F7; border-radius: 12px">
+<rect x="40" y="26" width="230" height="40" rx="3" fill="#F5DDE6" stroke="#A8325D" stroke-width="1.5"></rect>
+<rect x="40" y="36" width="230" height="20" fill="#FFFFFF" stroke="#A8325D" stroke-width="1" stroke-dasharray="4 3"></rect>
+<ellipse cx="270" cy="46" rx="9" ry="20" fill="#FCE4EC" stroke="#A8325D" stroke-width="1.5"></ellipse>
+<ellipse cx="270" cy="46" rx="4.5" ry="10" fill="#FFFFFF" stroke="#A8325D" stroke-width="1"></ellipse>
+<path d="M296 30 A 18 18 0 0 1 296 62" fill="none" stroke="#3B6BD0" stroke-width="2"></path><path d="M290 60 L297 64 L299 56 Z" fill="#3B6BD0"></path>
+<text x="304" y="50" font-family="DM Mono, monospace" font-size="12" fill="#3B6BD0">T</text>
+<line x1="40" y1="80" x2="270" y2="80" stroke="#7A5F6B" stroke-width="1"></line>
+<text x="132" y="78" font-family="DM Mono, monospace" font-size="11" fill="#7A5F6B">2.4 m</text>
+<text x="4" y="30" font-family="DM Mono, monospace" font-size="10" fill="#7A5F6B">D 120</text>
+<text x="4" y="50" font-family="DM Mono, monospace" font-size="10" fill="#7A5F6B">d 80</text>
+</svg>
+</section>
+
+<div style="display: flex; gap: 10px; align-items: center; padding: 11px 14px; border-radius: 16px; background: #E6EEFC">
+<span style="flex: none; width: 26px; height: 26px; border-radius: 50%; background: #3B6BD0; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg></span>
+<span style="flex: 1; font-size: 14px"><strong>Torque</strong> T = 9.95 kN·m</span>
+<span style="font-size: 12px; color: #3B6BD0; font-weight: 600">no hints</span>
+</div>
+
+<section aria-labelledby="step" style="background: #FFFFFF; border: 2px solid #E58AAA; border-radius: 20px; padding: 14px; display: flex; flex-direction: column; gap: 10px">
+<h2 id="step" style="margin: 0; font-size: 15px; font-weight: 700">Polar moment of inertia, J</h2>
+<div style="display: flex; gap: 8px">
+<label for="jv" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">J value</label>
+<input id="jv" value="3.27 × 10⁷" style="flex: 1; min-width: 0; padding: 12px 12px; border: 2px solid #D9568A; border-radius: 14px; font-family: 'DM Mono', monospace; font-size: 17px; color: #3A2530; background: #FFFFFF">
+<label for="ju" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Unit</label>
+<select id="ju" style="flex: none; padding: 12px 8px; border: 1px solid #EBC4D2; border-radius: 14px; font-family: 'DM Mono', monospace; font-size: 14px; color: #3A2530; background: #FFFFFF"><option>mm⁴</option><option>m⁴</option></select>
+</div>
+<div role="status" style="background: #FCE4EC; border-radius: 14px; padding: 11px 12px; font-size: 13px; line-height: 1.5; color: #4A2534"><strong style="color: #A8325D">Almost.</strong> Your answer is exactly double. With diameters, J uses π/32, not π/16.</div>
+</section>
+</div>
+
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 12px 18px 30px; background: #FFFFFF; border-top: 1px solid #F5CAD7; display: flex; gap: 10px">
+<button style="flex: 1; padding: 15px; border-radius: 16px; border: 1px solid #EBC4D2; background: #FFFFFF; color: #A8325D; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Hint</button>
+<button style="flex: 2; padding: 15px; border-radius: 16px; border: 0; background: #C2416E; color: #FFFFFF; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Check again</button>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
